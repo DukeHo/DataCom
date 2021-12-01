@@ -36,14 +36,14 @@ int main()
 
     
     while (lc > 0) {
-        // Choose a private integer for A's private key (only known to A)
+        // Private integer for A's private key (only known to A)
         a = rand();
 
         // Calculate A's public key (A will send `A` to B)
         A = compute(g, a, n);
 
-        // Choose a private integer for B's private key (only known to B)
-        b = rand();
+        // Private integer for B's private key (only known to B)
+        b = 56849865165;
 
         // Calculate B's public key (B will send `B` to A)
         B = compute(g, b, n);
